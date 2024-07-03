@@ -1,0 +1,66 @@
+/* Les styles CSS pour centrer l'horloge sur la page */
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: darkgrey;
+}
+
+.selection {
+    border: #333 3px dotted;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Les styles CSS pour définir l'apparence de l'horloge (un cercle) */
+#selected-country-clock {
+    width: 300px;
+    height: 300px;
+    border: 6px solid #333;
+    border-radius: 50%;
+    position: relative;
+    background-color: orange;
+    border-color: darkorange;
+}
+
+/* Les styles CSS pour définir l'apparence des aiguilles (mains) de l'horloge */
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    transform-origin: 100%;
+}
+
+/* Styles pour l'aiguille des heures */
+.hand-hour {
+    height: 6px;
+    background-color: #333;
+}
+
+/* Styles pour l'aiguille des minutes */
+.hand-minute {
+    height: 4px;
+    background-color: #555;
+}
+
+/* Styles pour l'aiguille des secondes */
+.hand-second {
+    height: 2px;
+    background-color: #f00;
+}
+
+.number {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform-origin: center;
+    font-size: 30px;
+}

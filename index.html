@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horloge Dynamique</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+    <div class="selection">
+        <!-- Horloge qui sera mise à jour en fonction du pays sélectionné -->
+        <label for="country-select">Choisissez un pays : </label>
+        <select id="country-select">
+            <option value="Europe/Paris" selected>France</option>
+            <option value="Europe/Berlin">Allemagne</option>
+            <option value="Europe/London">Royaume-Uni</option>
+            <option value="Europe/Rome">Italie</option>
+            <option value="Europe/Madrid">Espagne</option>
+            <option value="Europe/Amsterdam">Pays-Bas</option>
+            <option value="Europe/Brussels">Belgique</option>
+            <option value="Europe/Vienna">Autriche</option>
+            <option value="Europe/Athens">Grèce</option>
+            <option value="America/New_York">États-Unis (EST)</option>
+            <option value="America/Los_Angeles">États-Unis (PST)</option>
+            <option value="Canada/Pacific">Canada (PST)</option>
+            <option value="Canada/Mountain">Canada (MST)</option>
+            <option value="Canada/Central">Canada (CST)</option>
+            <option value="Canada/Eastern">Canada (EST)</option>
+            <option value="Asia/Tokyo">Japon</option>
+            <!-- Ajoute d'autres options pour d'autres pays avec les valeurs de leurs fuseaux horaires -->
+        </select>
+    </div>
+    
+
+    <div id="selected-country-clock">
+        <!-- Ajout des aiguilles heure, minute et seconde-->
+        <div class="hand hand-hour"></div>
+        <div class="hand hand-minute"></div>
+        <div class="hand hand-second"></div>
+
+        <!-- Ajout des chiffres de l'horloge -->
+        <div class="number" style="top: 10%; left: 50%; transform: translate(-50%, -50%) rotate(0deg);">12</div>
+        <div class="number" style="top: 15%; left: 72%; transform: translate(-50%, -50%) rotate(0deg);">1</div>
+        <div class="number" style="top: 30%; left: 87%; transform: translate(-50%, -50%) rotate(0deg);">2</div>
+        <div class="number" style="top: 50%; left: 92%; transform: translate(-50%, -50%) rotate(0deg);">3</div>
+        <div class="number" style="top: 70%; left: 87%; transform: translate(-50%, -50%) rotate(0deg);">4</div>
+        <div class="number" style="top: 85%; left: 72%; transform: translate(-50%, -50%) rotate(0deg);">5</div>
+        <div class="number" style="top: 90%; left: 50%; transform: translate(-50%, -50%) rotate(0deg);">6</div>
+        <div class="number" style="top: 85%; left: 28%; transform: translate(-50%, -50%) rotate(0deg);">7</div>
+        <div class="number" style="top: 70%; left: 14%; transform: translate(-50%, -50%) rotate(0deg);">8</div>
+        <div class="number" style="top: 50%; left: 10%; transform: translate(-50%, -50%) rotate(0deg);">9</div>
+        <div class="number" style="top: 30%; left: 15%; transform: translate(-50%, -50%) rotate(0deg);">10</div>
+        <div class="number" style="top: 15%; left: 29%; transform: translate(-50%, -50%) rotate(0deg);">11</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
